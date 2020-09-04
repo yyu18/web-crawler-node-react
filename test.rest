@@ -1,0 +1,29 @@
+### Create job
+POST http://localhost:3001/jobs
+Content-Type: application/json
+
+{
+    "job":{
+        "title": "Full Stack Developer",
+        "locationCom": "London, ON",
+        "company": "Dreamland VR"
+    }
+}
+
+### Update job
+PUT http://localhost:3001/jobs/5f51c4b0c89602bb019c6bb3
+Content-Type: application/json
+
+{
+    "job":{
+        "title": "Full Stack Developer",
+        "locationCom": "London Bay, ON",
+        "company": "Dreamland VR"
+    }
+}
+
+### Retrieve job
+GET http://localhost:3001/jobs?q=full+stack+developer&&start=10
+
+### Delete job
+DELETE http://localhost:3001/jobs/5f5230091f4e180e56db1a99

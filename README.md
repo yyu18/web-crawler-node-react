@@ -10,7 +10,9 @@ This exercise consists of two sections:
 
 ● Store all your scraped data into a database; You can use any databases (SQL or NoSQL); However, MongoDB is recommended; If you choose to use SQL or similar relational databases, please remember to include your migration files. 
 
-## 2. Single Page Application for CRUD operation on Scraped Data ● Use ReactJS or relevant frontend framework to build a single page application 
+## 2. Single Page Application for CRUD operation on Scraped Data 
+
+● Use ReactJS or relevant frontend framework to build a single page application 
 
 that allow us to search, edit, and delete scraped data; 
 
@@ -23,5 +25,3 @@ that allow us to search, edit, and delete scraped data;
 ● User will be able to soft delete scraped data; Soft Delete refers to hide the data from the User but the data still exists in the database; 
 
 ● In this task, you might need to develop at least 3 types of Restful APIs [GET for Search, Put for Update and Delete]; You will need to build these APIs using NodeJS; 
-
-** Estimate time of the whole question should be 1 day; Please email your solution to it@savvypro.ca; 
