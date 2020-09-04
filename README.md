@@ -13,3 +13,4 @@ user can search the keywords, can get data from indeed,
 
 user can save the data in mongo, edit or delete data
 
+pagination to keep scrap data to indeed
