@@ -2,7 +2,7 @@
 
 npm install
 
-npm run server.js //run node server
+npm run server //run node server
 
 npm start //run react 
 
