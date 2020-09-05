@@ -8,7 +8,7 @@ npm start //run react
 
 # Screenshot
 
-![alt text](https://github.com/yyu18/web-crawler-node-react/Screenshot-from-2020-09-05-16-08-38.jpg)
+![alt text](https://github.com/yyu18/web-crawler-node-react/blob/master/Screenshot-from-2020-09-05-16-08-38.jpg)
 
 # RESTFul API
 
