@@ -10,6 +10,8 @@ npm start //run react
 
 ![alt text](https://github.com/yyu18/web-crawler-node-react/blob/master/Screenshot-from-2020-09-05-16-08-38.jpg)
 
+![alt text](https://github.com/yyu18/web-crawler-node-react/blob/master/editJob.png)
+
 # RESTFul API
 
 all api saved and tested in test.rest
