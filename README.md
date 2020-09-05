@@ -6,6 +6,10 @@ npm run server //run node server
 
 npm start //run react 
 
+# Screenshot
+
+![alt text](https://github.com/yyu18/web-crawler-node-react/Screenshot-from-2020-09-05-16-08-38.jpg)
+
 # RESTFul API
 
 all api saved and tested in test.rest
