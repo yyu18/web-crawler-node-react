@@ -28,6 +28,8 @@ react http://localhost:3000
 
 search, scrap indeed data, 
 
+the data scraped include job title, company location, company name, salary, some company did not put salary, then salary will be empty
+
 nextpage, keep scrap indeed data
 
 https://ca.indeed.com/jobs?q=...&start=...

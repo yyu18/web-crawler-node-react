@@ -5,6 +5,7 @@ export const Saved = (props) =>{
     let editJob = useRef(null)
     let editLoc = useRef(null)
     let editCom = useRef(null)
+    let editSalary = useRef(null)
     useEffect(()=>{
         if(props.value.saved.info===undefined){
             const getSaved= async ()=>{
@@ -15,13 +16,14 @@ export const Saved = (props) =>{
             getSaved()
         }
     })
-    const handleDelete = (id) => {
-        /*let response = await fetch(JobsURI+'/'+id,{
+
+    const handleDelete = async (id) => {
+        let response = await fetch(JobsURI+'/'+id,{
             method:'DELETE'
         })
 
         let data = await response.json()   
-        if(data.error) return */
+        if(data.error) return 
         props.value.setSaved({
             info:props.value.saved.info.filter(e=>{
                 return e._id!==id
@@ -49,7 +51,8 @@ export const Saved = (props) =>{
                     "job":{
                         "title":editJob.current.value,
                         "locationCom":editLoc.current.value,
-                        "company":editCom.current.value
+                        "company":editCom.current.value,
+                        "salary":editSalary.current.value
                     }
                 })
             })
@@ -61,6 +64,7 @@ export const Saved = (props) =>{
                     e.title = editJob.current.value
                     e.locationCom = editLoc.current.value
                     e.company = editCom.current.value
+                    e.salary = editSalary.current.value
                     return
                 }
             })
@@ -95,9 +99,17 @@ export const Saved = (props) =>{
                     showMe.id===e._id ? 
                     <>
                        <p><input ref={editLoc}  defaultValue={e.locationCom}></input></p>                     
-                       <button onClick = {()=>handleSave(e._id)}>save</button>
                     </>:
                        <p id={e.locationCom}>{e.locationCom}</p>
+                    }
+
+{
+                    showMe.id===e._id ? 
+                    <>
+                       <p><input ref={editSalary}  defaultValue={e.salary}></input></p>                     
+                       <button onClick = {()=>handleSave(e._id)}>save</button>
+                    </>:
+                       <p id={e.salary}>{e.salary}</p>
                     }
                     <button onClick={()=>handleEdit(e._id,e.title)}>edit</button>
                     <button onClick={()=>handleDelete(e._id)}>delete</button>
@@ -146,7 +158,7 @@ export const Search = (props) =>{
     }
 
     const handlePage = async() =>{
-        start=start+10
+        start = start + 10
         let q = search.current.value.split(' ').join('+')
         if(!q) return 
         try{
@@ -169,6 +181,7 @@ export const Search = (props) =>{
                         <p>{e.title}</p>
                         <p>{e.company}</p>
                         <p>{e.locationCom}</p>
+                        <p>{e.salary}</p>
                         <button onClick={()=>handleSave(e)}>save</button>
                     </li>
                     )

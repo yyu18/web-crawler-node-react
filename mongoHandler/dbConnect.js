@@ -14,7 +14,8 @@ mongoose.set('useCreateIndex', true);
 const jobSchema = new mongoose.Schema({
   title:{ type:String, required:true },
   locationCom:{ type:String, required:true },
-  company:{ type:String, required:true }
+  company:{ type:String, required:true },
+  salary:{ type:String, required:true,default:"" }
 })
 
 const Jobs = mongoose.model('Jobs',jobSchema)

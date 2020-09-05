@@ -5,20 +5,22 @@ Content-Type: application/json
 {
     "job":{
         "title": "Full Stack Developer",
-        "locationCom": "London, ON",
-        "company": "Dreamland VR"
+        "locationCom": "London Bay, ON",
+        "company": "Dreamland VR",
+        "salary":"45000 - 70000"
     }
 }
 
 ### Update job
-PUT http://localhost:3001/jobs/5f51c4b0c89602bb019c6bb3
+PUT http://localhost:3001/jobs/5f53ed3eeb37d114c415188f
 Content-Type: application/json
 
 {
     "job":{
         "title": "Full Stack Developer",
         "locationCom": "London Bay, ON",
-        "company": "Dreamland VR"
+        "company": "Dreamland VR",
+        "salary":"$45,000 - $70,000 a year"
     }
 }
 

@@ -11,10 +11,13 @@ const getDom = async (url) => {
                 let title = $(elem).find('a.jobtitle','h2.title').attr('title')
                 let company_loc = $(elem).find('div.recJobLoc','div.sjcl').attr('data-rc-loc')
                 let company = $(elem).find('div.sjcl>div>span.company').text()
+                let salary = $(elem).find('div.salarySnippet>span.salary>span.salaryText').text()
+                console.log(salary)
                 let value = {
                     title:title.trim(),
                     locationCom:company_loc.trim(),
-                    company:company.trim()
+                    company:company.trim(),
+                    salary:salary.trim()
                 }
                 try{
                     jobPost.push(value)

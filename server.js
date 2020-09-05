@@ -14,6 +14,6 @@ app.response.sendStatus = function (statusCode, type, message) {
 app.use(express.json())
 app.use(allowCrossDomain)
 
-app.listen(3001,'0.0.0.0',function() { console.log('Example app listening on port 4000!');});
+app.listen(3001,'0.0.0.0',function() { console.log('Example app listening on port 3001!');});
 app.use('',router)
 app.use(errorHandler)
