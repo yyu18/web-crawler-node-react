@@ -1,27 +1,39 @@
-# react-interview-question 
-The main purpose of this excerise to test your programming skill and understanding on (1) Restful APIs, (2) HTML+CSS, (3) ReactJS or relevant frontend frameworks such as VueJS. 
-This exercise consists of two sections: 
-## 1. Web Crawler 
-● Target Site: https://www.indeed.ca/ 
+# How To Start
 
-● Pick one of the following keywords for Job Title Search: Software Developer, Full Stack Developer, Web Developer or Frontend Developer 
+npm install
 
-● To build a scraper to scrape at least 500 job postings from the selected term using NodeJS; You might need to look at Cheerio; 
+npm run server.js //run node server
 
-● Store all your scraped data into a database; You can use any databases (SQL or NoSQL); However, MongoDB is recommended; If you choose to use SQL or similar relational databases, please remember to include your migration files. 
+npm start //run react 
 
-## 2. Single Page Application for CRUD operation on Scraped Data 
+# RESTFul API
 
-● Use ReactJS or relevant frontend framework to build a single page application 
+all api saved and tested in test.rest
+### Create job
+POST http://localhost:3001/jobs
+### Update job
+PUT http://localhost:3001/jobs/5f51c4b0c89602bb019c6bb3
+### Retrieve job
+GET http://localhost:3001/jobs?q=full+stack+developer&&start=10
+### Delete job
+DELETE http://localhost:3001/jobs/5f5230091f4e180e56db1a99
 
-that allow us to search, edit, and delete scraped data; 
+# Database
 
-● User will be able to search job postings based on keywords; 
+MongoDB mongodb://localhost/jobs
 
-● User will be able to edit job postings; 
+# Front end
 
-● User will be able to add custom tags; 
+react http://localhost:3000
 
-● User will be able to soft delete scraped data; Soft Delete refers to hide the data from the User but the data still exists in the database; 
+search, scrap indeed data, 
 
-● In this task, you might need to develop at least 3 types of Restful APIs [GET for Search, Put for Update and Delete]; You will need to build these APIs using NodeJS; 
+nextpage, keep scrap indeed data
+
+https://ca.indeed.com/jobs?q=...&start=...
+
+save job, 
+
+edit job, 
+
+soft delete job

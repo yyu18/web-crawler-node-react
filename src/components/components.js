@@ -15,13 +15,13 @@ export const Saved = (props) =>{
             getSaved()
         }
     })
-    const handleDelete = async (id) => {
-        let response = await fetch(JobsURI+'/'+id,{
+    const handleDelete = (id) => {
+        /*let response = await fetch(JobsURI+'/'+id,{
             method:'DELETE'
         })
 
         let data = await response.json()   
-        if(data.error) return 
+        if(data.error) return */
         props.value.setSaved({
             info:props.value.saved.info.filter(e=>{
                 return e._id!==id
